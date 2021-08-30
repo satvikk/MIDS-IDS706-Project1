@@ -10,4 +10,4 @@ lint:
 
 deploy:
 	echo "Go Go App!"
-	eb deploy proj1-dev
+	eb deploy MIDS-IDS706-Project1-dev
