@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import jsonify
+#from flask import jsonify
 
 application = Flask(__name__)
 
@@ -11,10 +11,10 @@ def hello():
     return "<p> Append your birth month number to the url (with a slash) </p>"
 
 
-@application.route("/echo/<m>")
+@application.route("/<m>")
 def echo(m):
     print(f"This was placed in the url: {m}")
-    if m not in record.keys:
+    if m not in record.keys():
         return {"error":"invalid"}
     record[m] += 1
     return {m:record[m]}
