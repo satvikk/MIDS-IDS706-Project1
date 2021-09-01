@@ -16,9 +16,9 @@ def echo(m):
     print(f"This was placed in the url: {m}")
     m = int(m)
     if m not in record.keys():
-        return {"error":"invalid"}
+        return {"error":"invalid input"}
     record[m] += 1
-    return {m:record[m]}
+    return record
 
 
 if __name__ == "__main__":
