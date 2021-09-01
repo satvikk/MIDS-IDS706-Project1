@@ -14,6 +14,7 @@ def hello():
 @application.route("/<m>")
 def echo(m):
     print(f"This was placed in the url: {m}")
+    m = int(m)
     if m not in record.keys():
         return {"error":"invalid"}
     record[m] += 1
