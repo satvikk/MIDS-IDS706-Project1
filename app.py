@@ -8,15 +8,16 @@ application = Flask(__name__)
 def hello():
     """Return a friendly HTTP greeting."""
     print("Inside Root")
-    return "<p> Append your birth month number to the url (with a slash) </p>"
+    return "<p> Append your birth month number to the url (with a slash) </p>" 
 
 
 @application.route("/<m>")
 def echo(m):
     print(f"This was placed in the url: {m}")
-    m = int(m)
     if m not in record.keys():
+        m = int(m)
         return {"error":"invalid input"}
+    m = int(m)
     record[m] += 1
     return record
 
