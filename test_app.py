@@ -1,7 +1,7 @@
 from app import *
 
-def test_hello():
-    a = hello()
+#def test_hello():
+#    a = hello()
 
 #def test_echo():
 #    record = {i:0 for i in range(1,13)}
