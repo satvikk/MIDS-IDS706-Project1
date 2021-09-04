@@ -18,6 +18,12 @@ def echo(m):
         11:"November", 12:"December"
         
     }
+    try:
+        m = str(m)
+        pass
+    except:
+        pass
+    
     print(f"This was placed in the url: {m}")
     if m not in record.keys():
         return {"error":"invalid input"}
