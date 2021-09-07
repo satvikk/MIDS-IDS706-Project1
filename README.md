@@ -3,4 +3,4 @@
 # MIDS-IDS706-Project1
 IDS706 | Duke University | Noah Gift | Project 1 |Continuous Delivery of Flask/FastAPI Data Engineering API on GCP/AWS/Azure 
 
-TODO: new service
+Simple app: Take in input as number of month, returns name of month as a JSON
