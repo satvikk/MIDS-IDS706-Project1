@@ -8,7 +8,7 @@ application = Flask(__name__)
 def hello():
     #"""Return a friendly HTTP greeting."""
     print("Inside Root")
-    return "Hello there!" 
+    return "Append /Number of month to url" 
 
 
 @application.route("/<m>")
